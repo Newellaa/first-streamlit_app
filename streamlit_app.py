@@ -1,6 +1,7 @@
 import streamlit 
 import pandas
 import requests
+
 import snowflake.connector
 from urllib.error import URLError
 
@@ -35,6 +36,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
+streamlit.stop()
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('The user entered ', add_my_fruit)
