@@ -75,7 +75,7 @@ streamlit.write('Thanks for adding ', add_my_fruit)
 #This is not working
 
 
-ruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json())
 
 # Normalize Jason version 
